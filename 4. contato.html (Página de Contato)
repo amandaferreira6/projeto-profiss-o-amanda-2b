@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - VitaCare Clínica Médica</title>
+    <meta name="description" content="Entre em contato com a VitaCare Clínica Médica para agendar consultas ou tirar dúvidas">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-vitacare.svg" alt="VitaCare Clínica Médica" width="180">
+            </a>
+            
+            <nav class="nav">
+                <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Página -->
+    <section class="page-banner" style="background-image: url('img/banner-contato.jpg');">
+        <div class="container">
+            <h1>Fale Conosco</h1>
+            <p>Estamos aqui para responder suas dúvidas e agendar sua consulta</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato">
+        <div class="container">
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h2>Informações de Contato</h2>
+                    <p>Temos diversos canais de comunicação para melhor atendê-lo. Escolha o que preferir:</p>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-texto">
+                            <h3>Endereço</h3>
+                            <p>Av. Medicina, 123 - Centro<br>São Paulo/SP - CEP: 01234-567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-texto">
+                            <h3>Telefones</h3>
+                            <p>
+                                <strong>Agendamentos:</strong> (11) 99999-9999<br>
+                                <strong>Emergências:</strong> (11) 98888-8888<br>
+                                <strong>WhatsApp:</strong> (11) 97777-7777
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-texto">
+                            <h3>E-mail</h3>
+                            <p>
+                                <strong>Agendamentos:</strong> agendamento@vitacare.com.br<br>
+                                <strong>Dúvidas:</strong> contato@vitacare.com.br<br>
+                                <strong>RH:</strong> rh@vitacare.com.br
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-texto">
+                            <h3>Horário de Funcionamento</h3>
+                            <p>
+                                <strong>Segunda a Sexta:</strong> 8h às 18h<br>
+                                <strong>Sábado:</strong> 8h às 12h<br>
+                                <strong>Domingo e Feriados:</strong> Fechado
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contato-form">
+                    <h2>Envie uma Mensagem</h2>
+                    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+                    
+                    <form id="form-contato" class="formulario">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto *</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="" disabled selected>Selecione um assunto</option>
+                                <option value="agendamento">Agendamento de Consulta</option>
+                                <option value="exame">Agendamento de Exame</option>
+                                <option value="duvida">Dúvida sobre Serviços</option>
+                                <option value="orcamento">Orçamento/Convênios</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="consentimento" name="consentimento" required>
+                            <label for="consentimento">Li e concordo com a <a href="#">Política de Privacidade</a> *</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                    </form>
+                    
+                    <div id="form-mensagem" class="form-mensagem"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="mapa">
+        <div class="container">
+            <h2>Onde Estamos</h2>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197584455615!2d-46.65867592436692!3d-23.56134717879842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1689876442083!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre nossos serviços e atendimento</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Como agendar uma consulta?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Você pode agendar uma consulta de três formas:</p>
+                        <ol>
+                            <li>Pelo telefone (11) 99999-9999</li>
+                            <li>Pelo WhatsApp (11) 97777-7777</li>
+                            <li>Preenchendo nosso formulário de contato online</li>
+                        </ol>
+                        <p>Para agendamentos presenciais, estamos disponíveis de segunda a sexta, das 8h às 18h, e aos sábados das 8h às 12h.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Quais documentos devo levar para a consulta?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Para sua primeira consulta, recomendamos trazer:</p>
+                        <ul>
+                            <li>Documento de identidade com foto (RG ou CNH)</li>
+                            <li>Cartão do convênio médico (se tiver)</li>
+                            <li>Exames recentes relacionados à sua condição</li>
+                            <li>Lista de medicamentos em uso</li>
+                            <li>Relatórios médicos anteriores (se houver)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Qual o prazo para cancelamento de consulta?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>O cancelamento deve ser feito com pelo menos 24 horas de antecedência para que possamos disponibilizar o horário para outro paciente. Cancelamentos em cima da hora ou faltas sem aviso prévio podem estar sujeitos a multa, conforme política da clínica.</p>
+                        <p>Para cancelar, entre em contato pelo telefone (11) 99999-9999 ou pelo WhatsApp (11) 97777-7777.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        A clínica atende por convênio médico?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim, atendemos os principais convênios médicos do mercado. Consulte na seção "Convênios" de nosso site a lista completa. Caso seu convênio não esteja listado, entre em contato conosco para verificar possibilidades.</p>
+                        <p>Para pacientes particulares, oferecemos condições especiais de pagamento e descontos em pacotes de consultas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        Qual a especialidade médica mais procurada?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>As especialidades mais procuradas em nossa clínica são:</p>
+                        <ol>
+                            <li>Clínico Geral</li>
+                            <li>Cardiologia</li>
+                            <li>Ortopedia</li>
+                            <li>Ginecologia</li>
+                            <li>Pediatria</li>
+                        </ol>
+                        <p>Para estas especialidades, recomendamos agendar com antecedência, especialmente para horários mais concorridos no início da manhã e final da tarde.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Não encontrou sua dúvida aqui? Entre em contato conosco!</p>
+                <a href="#form-contato" class="btn btn-primary">Enviar Mensagem</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo-vitacare-white.svg" alt="VitaCare" width="160">
+                    <p>Excelência em cuidados médicos com foco no paciente e resultados de qualidade.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="servicos.html#cardiologia">Cardiologia</a></li>
+                        <li><a href="servicos.html#ortopedia">Ortopedia</a></li>
+                        <li><a href="servicos.html#pediatria">Pediatria</a></li>
+                        <li><a href="servicos.html#ginecologia">Ginecologia</a></li>
+                        <li><a href="servicos.html#clinico">Clínico Geral</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="footer-contato">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Medicina, 123 - Centro, São Paulo/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@vitacare.com.br</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h | Sáb: 8h às 12h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VitaCare Clínica Médica. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
