@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaCare - Clínica Médica Integrada</title>
+    <meta name="description" content="Clínica médica especializada em cuidados integrados de saúde com foco no paciente">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-vitacare.svg" alt="VitaCare Clínica Médica" width="180">
+            </a>
+            
+            <nav class="nav">
+                <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Cuidando da sua saúde com excelência</h1>
+                <p class="hero-text">Na VitaCare, sua saúde é nossa prioridade. Oferecemos atendimento médico especializado com tecnologia de ponta e equipe altamente qualificada.</p>
+                <a href="contato.html" class="btn btn-primary">Agende uma Consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="destaques">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Diferenciais</h2>
+                <p class="section-subtitle">Conheça o que nos torna referência em cuidados médicos</p>
+            </div>
+            
+            <div class="destaques-grid">
+                <div class="destaque-card">
+                    <div class="destaque-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Corpo Clínico</h3>
+                    <p>Médicos especialistas com vasta experiência e titulação reconhecida.</p>
+                </div>
+                
+                <div class="destaque-card">
+                    <div class="destaque-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Infraestrutura</h3>
+                    <p>Instalações modernas e equipamentos de última geração para diagnóstico preciso.</p>
+                </div>
+                
+                <div class="destaque-card">
+                    <div class="destaque-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Atendimento</h3>
+                    <p>Humanizado e personalizado, colocando o paciente no centro de tudo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços em Destaque -->
+    <section class="servicos-destaque">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Conheça alguns dos nossos principais serviços médicos</p>
+            </div>
+            
+            <div class="servicos-carrossel">
+                <div class="servico-slide">
+                    <img src="img/cardiologia.jpg" alt="Cardiologia">
+                    <div class="servico-info">
+                        <h3>Cardiologia</h3>
+                        <p>Prevenção, diagnóstico e tratamento de doenças do coração e sistema cardiovascular.</p>
+                        <a href="servicos.html#cardiologia" class="btn btn-outline">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <div class="servico-slide">
+                    <img src="img/ortopedia.jpg" alt="Ortopedia">
+                    <div class="servico-info">
+                        <h3>Ortopedia</h3>
+                        <p>Tratamento de lesões e doenças do sistema musculoesquelético com técnicas avançadas.</p>
+                        <a href="servicos.html#ortopedia" class="btn btn-outline">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <div class="servico-slide">
+                    <img src="img/pediatria.jpg" alt="Pediatria">
+                    <div class="servico-info">
+                        <h3>Pediatria</h3>
+                        <p>Cuidados especializados para crianças e adolescentes, desde o nascimento.</p>
+                        <a href="servicos.html#pediatria" class="btn btn-outline">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carrossel-controle">
+                <button class="carrossel-prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="carrossel-indicadores"></div>
+                <button class="carrossel-next" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que dizem nossos pacientes</h2>
+                <p class="section-subtitle">Depoimentos de quem já confiou em nossos serviços</p>
+            </div>
+            
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-texto">
+                        <p>"Excelente atendimento! Os médicos são muito atenciosos e a clínica possui equipamentos modernos. Minha saúde melhorou muito depois que comecei o tratamento aqui."</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <img src="img/paciente1.jpg" alt="Carlos Silva">
+                        <div>
+                            <h4>Carlos Silva</h4>
+                            <span>Paciente de Cardiologia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-texto">
+                        <p>"Levo meus filhos na VitaCare desde pequenos. Os pediatras são maravilhosos, explicam tudo com paciência e as crianças adoram o ambiente acolhedor da clínica."</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <img src="img/paciente2.jpg" alt="Ana Oliveira">
+                        <div>
+                            <h4>Ana Oliveira</h4>
+                            <span>Mãe de pacientes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Agendamento -->
+    <section class="cta-agendamento">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para cuidar da sua saúde?</h2>
+                <p>Agende sua consulta agora mesmo e dê o primeiro passo para uma vida mais saudável.</p>
+                <div class="cta-buttons">
+                    <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
+                    <a href="tel:+5511999999999" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> (11) 99999-9999
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo-vitacare-white.svg" alt="VitaCare" width="160">
+                    <p>Excelência em cuidados médicos com foco no paciente e resultados de qualidade.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="servicos.html#cardiologia">Cardiologia</a></li>
+                        <li><a href="servicos.html#ortopedia">Ortopedia</a></li>
+                        <li><a href="servicos.html#pediatria">Pediatria</a></li>
+                        <li><a href="servicos.html#ginecologia">Ginecologia</a></li>
+                        <li><a href="servicos.html#clinico">Clínico Geral</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="footer-contato">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Medicina, 123 - Centro, São Paulo/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@vitacare.com.br</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h | Sáb: 8h às 12h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VitaCare Clínica Médica. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
