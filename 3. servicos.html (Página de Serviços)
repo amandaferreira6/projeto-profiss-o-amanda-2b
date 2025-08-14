@@ -1,630 +1,3 @@
-# Site Completo para Clínica Médica - Projeto de Portfólio
-
-Vou criar um site completo para uma clínica médica fictícia chamada "VitaCare", com todas as páginas e funcionalidades solicitadas. O site será responsivo, moderno e pronto para publicação no GitHub Pages.
-
-## Estrutura de Arquivos
-
-```
-vita-care/
-├── index.html          # Página inicial
-├── sobre.html          # Página Sobre
-├── servicos.html       # Página de Serviços
-├── contato.html        # Página de Contato
-├── blog.html           # Página Blog
-├── css/
-│   ├── style.css       # Estilos principais
-│   └── responsive.css  # Estilos responsivos
-├── js/
-│   ├── main.js         # JavaScript principal
-│   └── form.js         # JavaScript do formulário
-├── img/                # Pasta de imagens
-└── assets/             # Outros assets (ícones, fonts)
-```
-
-## Código Completo
-
-### 1. index.html (Página Inicial)
-
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VitaCare - Clínica Médica Integrada</title>
-    <meta name="description" content="Clínica médica especializada em cuidados integrados de saúde com foco no paciente">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="img/logo-vitacare.svg" alt="VitaCare Clínica Médica" width="180">
-            </a>
-            
-            <nav class="nav">
-                <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-                
-                <ul class="menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Banner Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Cuidando da sua saúde com excelência</h1>
-                <p class="hero-text">Na VitaCare, sua saúde é nossa prioridade. Oferecemos atendimento médico especializado com tecnologia de ponta e equipe altamente qualificada.</p>
-                <a href="contato.html" class="btn btn-primary">Agende uma Consulta</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Destaques -->
-    <section class="destaques">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nossos Diferenciais</h2>
-                <p class="section-subtitle">Conheça o que nos torna referência em cuidados médicos</p>
-            </div>
-            
-            <div class="destaques-grid">
-                <div class="destaque-card">
-                    <div class="destaque-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Corpo Clínico</h3>
-                    <p>Médicos especialistas com vasta experiência e titulação reconhecida.</p>
-                </div>
-                
-                <div class="destaque-card">
-                    <div class="destaque-icon">
-                        <i class="fas fa-hospital"></i>
-                    </div>
-                    <h3>Infraestrutura</h3>
-                    <p>Instalações modernas e equipamentos de última geração para diagnóstico preciso.</p>
-                </div>
-                
-                <div class="destaque-card">
-                    <div class="destaque-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Atendimento</h3>
-                    <p>Humanizado e personalizado, colocando o paciente no centro de tudo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Serviços em Destaque -->
-    <section class="servicos-destaque">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nossos Serviços</h2>
-                <p class="section-subtitle">Conheça alguns dos nossos principais serviços médicos</p>
-            </div>
-            
-            <div class="servicos-carrossel">
-                <div class="servico-slide">
-                    <img src="img/cardiologia.jpg" alt="Cardiologia">
-                    <div class="servico-info">
-                        <h3>Cardiologia</h3>
-                        <p>Prevenção, diagnóstico e tratamento de doenças do coração e sistema cardiovascular.</p>
-                        <a href="servicos.html#cardiologia" class="btn btn-outline">Saiba mais</a>
-                    </div>
-                </div>
-                
-                <div class="servico-slide">
-                    <img src="img/ortopedia.jpg" alt="Ortopedia">
-                    <div class="servico-info">
-                        <h3>Ortopedia</h3>
-                        <p>Tratamento de lesões e doenças do sistema musculoesquelético com técnicas avançadas.</p>
-                        <a href="servicos.html#ortopedia" class="btn btn-outline">Saiba mais</a>
-                    </div>
-                </div>
-                
-                <div class="servico-slide">
-                    <img src="img/pediatria.jpg" alt="Pediatria">
-                    <div class="servico-info">
-                        <h3>Pediatria</h3>
-                        <p>Cuidados especializados para crianças e adolescentes, desde o nascimento.</p>
-                        <a href="servicos.html#pediatria" class="btn btn-outline">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carrossel-controle">
-                <button class="carrossel-prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
-                <div class="carrossel-indicadores"></div>
-                <button class="carrossel-next" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Depoimentos -->
-    <section class="depoimentos">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">O que dizem nossos pacientes</h2>
-                <p class="section-subtitle">Depoimentos de quem já confiou em nossos serviços</p>
-            </div>
-            
-            <div class="depoimentos-grid">
-                <div class="depoimento-card">
-                    <div class="depoimento-texto">
-                        <p>"Excelente atendimento! Os médicos são muito atenciosos e a clínica possui equipamentos modernos. Minha saúde melhorou muito depois que comecei o tratamento aqui."</p>
-                    </div>
-                    <div class="depoimento-autor">
-                        <img src="img/paciente1.jpg" alt="Carlos Silva">
-                        <div>
-                            <h4>Carlos Silva</h4>
-                            <span>Paciente de Cardiologia</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="depoimento-card">
-                    <div class="depoimento-texto">
-                        <p>"Levo meus filhos na VitaCare desde pequenos. Os pediatras são maravilhosos, explicam tudo com paciência e as crianças adoram o ambiente acolhedor da clínica."</p>
-                    </div>
-                    <div class="depoimento-autor">
-                        <img src="img/paciente2.jpg" alt="Ana Oliveira">
-                        <div>
-                            <h4>Ana Oliveira</h4>
-                            <span>Mãe de pacientes</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Agendamento -->
-    <section class="cta-agendamento">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Pronto para cuidar da sua saúde?</h2>
-                <p>Agende sua consulta agora mesmo e dê o primeiro passo para uma vida mais saudável.</p>
-                <div class="cta-buttons">
-                    <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
-                    <a href="tel:+5511999999999" class="btn btn-outline">
-                        <i class="fas fa-phone"></i> (11) 99999-9999
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="img/logo-vitacare-white.svg" alt="VitaCare" width="160">
-                    <p>Excelência em cuidados médicos com foco no paciente e resultados de qualidade.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Serviços</h3>
-                    <ul>
-                        <li><a href="servicos.html#cardiologia">Cardiologia</a></li>
-                        <li><a href="servicos.html#ortopedia">Ortopedia</a></li>
-                        <li><a href="servicos.html#pediatria">Pediatria</a></li>
-                        <li><a href="servicos.html#ginecologia">Ginecologia</a></li>
-                        <li><a href="servicos.html#clinico">Clínico Geral</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contato</h3>
-                    <ul class="footer-contato">
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Medicina, 123 - Centro, São Paulo/SP</li>
-                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
-                        <li><i class="fas fa-envelope"></i> contato@vitacare.com.br</li>
-                        <li><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h | Sáb: 8h às 12h</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2023 VitaCare Clínica Médica. Todos os direitos reservados.</p>
-                <div class="footer-links">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-</body>
-</html>
-```
-
-### 2. sobre.html (Página Sobre)
-
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - VitaCare Clínica Médica</title>
-    <meta name="description" content="Conheça a história, missão e valores da VitaCare Clínica Médica">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="img/logo-vitacare.svg" alt="VitaCare Clínica Médica" width="180">
-            </a>
-            
-            <nav class="nav">
-                <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-                
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html" class="active">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Banner Página -->
-    <section class="page-banner" style="background-image: url('img/banner-sobre.jpg');">
-        <div class="container">
-            <h1>Sobre a VitaCare</h1>
-            <p>Conheça nossa história, missão e valores</p>
-        </div>
-    </section>
-
-    <!-- Nossa História -->
-    <section class="nossa-historia">
-        <div class="container">
-            <div class="historia-content">
-                <div class="historia-texto">
-                    <h2 class="section-title">Nossa História</h2>
-                    <p>Fundada em 2010, a VitaCare nasceu da visão de um grupo de médicos que desejava oferecer um atendimento médico diferenciado, combinando excelência técnica com humanização no cuidado ao paciente.</p>
-                    <p>Começamos como uma pequena clínica no centro de São Paulo e, ao longo dos anos, crescemos graças à confiança de nossos pacientes e ao compromisso com a qualidade em saúde. Hoje, somos referência em medicina integrada, com mais de 20 especialidades e uma equipe de mais de 50 profissionais altamente qualificados.</p>
-                    <p>Nossa trajetória é marcada por inovações tecnológicas, investimento contínuo em capacitação da equipe e, principalmente, pela satisfação de milhares de pacientes que confiaram em nossos serviços.</p>
-                </div>
-                <div class="historia-imagem">
-                    <img src="img/clinica-antiga.jpg" alt="Nossa clínica em 2010" class="historia-img">
-                    <div class="historia-legenda">Nossa primeira unidade em 2010</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Missão, Visão e Valores -->
-    <section class="missao-valores">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nossos Pilares</h2>
-                <p class="section-subtitle">O que nos guia em nossa jornada de cuidados com a saúde</p>
-            </div>
-            
-            <div class="pilares-grid">
-                <div class="pilar-card">
-                    <div class="pilar-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Missão</h3>
-                    <p>Proporcionar saúde e qualidade de vida através de atendimento médico excelente, humanizado e personalizado, com foco na prevenção e no tratamento eficaz de doenças.</p>
-                </div>
-                
-                <div class="pilar-card">
-                    <div class="pilar-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Visão</h3>
-                    <p>Ser reconhecida como a melhor clínica médica integrada do país, referência em qualidade assistencial, tecnologia e satisfação dos pacientes até 2030.</p>
-                </div>
-                
-                <div class="pilar-card">
-                    <div class="pilar-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Valores</h3>
-                    <ul>
-                        <li>Ética e transparência</li>
-                        <li>Humanização no atendimento</li>
-                        <li>Excelência técnica</li>
-                        <li>Inovação constante</li>
-                        <li>Responsabilidade social</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nossa Equipe -->
-    <section class="nossa-equipe">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Conheça Nossa Equipe</h2>
-                <p class="section-subtitle">Profissionais altamente qualificados e comprometidos com sua saúde</p>
-            </div>
-            
-            <div class="equipe-carrossel">
-                <div class="equipe-slide">
-                    <img src="img/medico1.jpg" alt="Dr. Carlos Mendes">
-                    <div class="equipe-info">
-                        <h3>Dr. Carlos Mendes</h3>
-                        <span>Cardiologista</span>
-                        <p>CRM-SP 123456</p>
-                        <div class="equipe-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-researchgate"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="equipe-slide">
-                    <img src="img/medica2.jpg" alt="Dra. Ana Lúcia Silva">
-                    <div class="equipe-info">
-                        <h3>Dra. Ana Lúcia Silva</h3>
-                        <span>Pediatra</span>
-                        <p>CRM-SP 654321</p>
-                        <div class="equipe-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-researchgate"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="equipe-slide">
-                    <img src="img/medico3.jpg" alt="Dr. Roberto Fernandes">
-                    <div class="equipe-info">
-                        <h3>Dr. Roberto Fernandes</h3>
-                        <span>Ortopedista</span>
-                        <p>CRM-SP 789012</p>
-                        <div class="equipe-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-researchgate"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="equipe-slide">
-                    <img src="img/medica4.jpg" alt="Dra. Mariana Oliveira">
-                    <div class="equipe-info">
-                        <h3>Dra. Mariana Oliveira</h3>
-                        <span>Ginecologista</span>
-                        <p>CRM-SP 210987</p>
-                        <div class="equipe-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-researchgate"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="equipe-cta">
-                <a href="servicos.html" class="btn btn-primary">Conheça Todos os Especialistas</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Infraestrutura -->
-    <section class="infraestrutura">
-        <div class="container">
-            <div class="infraestrutura-content">
-                <div class="infraestrutura-imagens">
-                    <div class="infra-img-main">
-                        <img src="img/clinica-atual.jpg" alt="Nossa clínica hoje">
-                    </div>
-                    <div class="infra-img-grid">
-                        <img src="img/sala-consulta.jpg" alt="Sala de consulta">
-                        <img src="img/equipamentos.jpg" alt="Nossos equipamentos">
-                        <img src="img/recepcao.jpg" alt="Recepção">
-                        <img src="img/espera.jpg" alt="Sala de espera">
-                    </div>
-                </div>
-                
-                <div class="infraestrutura-texto">
-                    <h2 class="section-title">Nossa Infraestrutura</h2>
-                    <p>A VitaCare conta com instalações modernas e equipamentos de última geração para oferecer o melhor atendimento aos nossos pacientes:</p>
-                    
-                    <ul class="infra-lista">
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Consultórios amplos e climatizados</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Centro de diagnósticos completo</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Sala de vacinação</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Ambulatório para pequenos procedimentos</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Acessibilidade completa</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Wi-Fi gratuito e ambiente acolhedor</span>
-                        </li>
-                    </ul>
-                    
-                    <p>Investimos constantemente em tecnologia e conforto para que sua experiência na VitaCare seja a melhor possível.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificações -->
-    <section class="certificacoes">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Certificações e Reconhecimentos</h2>
-                <p class="section-subtitle">Compromisso com a qualidade e segurança do paciente</p>
-            </div>
-            
-            <div class="certificacoes-grid">
-                <div class="certificado-card">
-                    <img src="img/certificado1.png" alt="Certificação ONA">
-                    <p>Certificação ONA - Nível 2</p>
-                </div>
-                
-                <div class="certificado-card">
-                    <img src="img/certificado2.png" alt="Acreditação Internacional">
-                    <p>Acreditação Internacional JCI</p>
-                </div>
-                
-                <div class="certificado-card">
-                    <img src="img/certificado3.png" alt="Prêmio Qualidade em Saúde">
-                    <p>Prêmio Qualidade em Saúde 2022</p>
-                </div>
-                
-                <div class="certificado-card">
-                    <img src="img/certificado4.png" alt="Hospital Seguro">
-                    <p>Certificado Hospital Seguro</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="img/logo-vitacare-white.svg" alt="VitaCare" width="160">
-                    <p>Excelência em cuidados médicos com foco no paciente e resultados de qualidade.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Serviços</h3>
-                    <ul>
-                        <li><a href="servicos.html#cardiologia">Cardiologia</a></li>
-                        <li><a href="servicos.html#ortopedia">Ortopedia</a></li>
-                        <li><a href="servicos.html#pediatria">Pediatria</a></li>
-                        <li><a href="servicos.html#ginecologia">Ginecologia</a></li>
-                        <li><a href="servicos.html#clinico">Clínico Geral</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contato</h3>
-                    <ul class="footer-contato">
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Medicina, 123 - Centro, São Paulo/SP</li>
-                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
-                        <li><i class="fas fa-envelope"></i> contato@vitacare.com.br</li>
-                        <li><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h | Sáb: 8h às 12h</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2023 VitaCare Clínica Médica. Todos os direitos reservados.</p>
-                <div class="footer-links">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-</body>
-</html>
-```
-
-### 3. servicos.html (Página de Serviços)
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -753,3 +126,343 @@ vita-care/
                             <p>Nossa equipe de cardiologistas é altamente qualificada, com formação nas melhores instituições do país e no exterior, oferecendo atendimento personalizado e tratamentos baseados nas últimas evidências científicas.</p>
                             
                             <h4>Principais Atendimentos:</h4>
+                            <ul class="servico-lista">
+                                <li>Consulta cardiológica</li>
+                                <li>Check-up cardiovascular</li>
+                                <li>Ecocardiograma</li>
+                                <li>Teste ergométrico</li>
+                                <li>Holter 24h</li>
+                                <li>MAP A 24h</li>
+                                <li>Acompanhamento pós-infarto</li>
+                                <li>Tratamento de hipertensão</li>
+                            </ul>
+                            
+                            <div class="servico-info">
+                                <div class="info-card">
+                                    <i class="fas fa-user-md"></i>
+                                    <h5>Médicos</h5>
+                                    <p>Dr. Carlos Mendes<br>Dra. Patrícia Lima</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-clock"></i>
+                                    <h5>Horários</h5>
+                                    <p>Seg-Qua: 9h-17h<br>Qui-Sex: 14h-18h</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h5>Agendamento</h5>
+                                    <p>Consultas com até 48h de antecedência</p>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="ortopedia">
+                    <div class="servico-detalhe">
+                        <div class="servico-imagem">
+                            <img src="img/ortopedia.jpg" alt="Ortopedia">
+                        </div>
+                        <div class="servico-texto">
+                            <h3>Ortopedia e Traumatologia</h3>
+                            <p>A ortopedia é a especialidade médica que cuida da saúde relacionadas aos elementos do aparelho locomotor, como ossos, músculos, ligamentos e articulações. A traumatologia é a especialidade relacionada ao tratamento de lesões decorrentes de traumatismos.</p>
+                            <p>Nossa equipe ortopédica possui vasta experiência no tratamento conservador e cirúrgico das mais diversas patologias do sistema musculoesquelético.</p>
+                            
+                            <h4>Principais Atendimentos:</h4>
+                            <ul class="servico-lista">
+                                <li>Consultas ortopédicas</li>
+                                <li>Tratamento de fraturas</li>
+                                <li>Artroscopias</li>
+                                <li>Próteses articulares</li>
+                                <li>Tratamento de lesões esportivas</li>
+                                <li>Reabilitação pós-cirúrgica</li>
+                                <li>Ortopedia pediátrica</li>
+                                <li>Tratamento de coluna</li>
+                            </ul>
+                            
+                            <div class="servico-info">
+                                <div class="info-card">
+                                    <i class="fas fa-user-md"></i>
+                                    <h5>Médicos</h5>
+                                    <p>Dr. Roberto Fernandes<br>Dr. André Santos</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-clock"></i>
+                                    <h5>Horários</h5>
+                                    <p>Ter-Qui: 8h-12h e 14h-18h<br>Sex: 8h-12h</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h5>Agendamento</h5>
+                                    <p>Consultas com até 24h de antecedência</p>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="pediatria">
+                    <div class="servico-detalhe">
+                        <div class="servico-imagem">
+                            <img src="img/pediatria.jpg" alt="Pediatria">
+                        </div>
+                        <div class="servico-texto">
+                            <h3>Pediatria</h3>
+                            <p>A pediatria é a especialidade médica dedicada à assistência à criança e ao adolescente, nos seus diversos aspectos, sejam eles preventivos ou curativos.</p>
+                            <p>Nossos pediatras são especializados em diferentes áreas, oferecendo atendimento integral desde o nascimento até a adolescência, com foco no crescimento e desenvolvimento saudáveis.</p>
+                            
+                            <h4>Principais Atendimentos:</h4>
+                            <ul class="servico-lista">
+                                <li>Puericultura (acompanhamento do crescimento)</li>
+                                <li>Vacinação</li>
+                                <li>Aleitamento materno</li>
+                                <li>Doenças infantis comuns</li>
+                                <li>Adolescência</li>
+                                <li>Nutrição infantil</li>
+                                <li>Neurologia pediátrica</li>
+                                <li>Pneumologia pediátrica</li>
+                            </ul>
+                            
+                            <div class="servico-info">
+                                <div class="info-card">
+                                    <i class="fas fa-user-md"></i>
+                                    <h5>Médicos</h5>
+                                    <p>Dra. Ana Lúcia Silva<br>Dra. Mariana Costa</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-clock"></i>
+                                    <h5>Horários</h5>
+                                    <p>Seg-Sex: 8h-17h<br>Sáb: 8h-12h</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h5>Agendamento</h5>
+                                    <p>Consultas com até 2h de antecedência</p>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="ginecologia">
+                    <div class="servico-detalhe">
+                        <div class="servico-imagem">
+                            <img src="img/ginecologia.jpg" alt="Ginecologia">
+                        </div>
+                        <div class="servico-texto">
+                            <h3>Ginecologia e Obstetrícia</h3>
+                            <p>A ginecologia é a prática da medicina que lida diretamente com a saúde do aparelho reprodutor feminino e mamas. A obstetrícia é o ramo da medicina que estuda a reprodução na mulher.</p>
+                            <p>Nossa equipe de ginecologistas e obstetras oferece atendimento humanizado e especializado para mulheres em todas as fases da vida, desde a adolescência até a menopausa.</p>
+                            
+                            <h4>Principais Atendimentos:</h4>
+                            <ul class="servico-lista">
+                                <li>Consulta ginecológica</li>
+                                <li>Prevenção do câncer ginecológico</li>
+                                <li>Planejamento familiar</li>
+                                <li>Pré-natal</li>
+                                <li>Ultrassonografia obstétrica</li>
+                                <li>Climatério e menopausa</li>
+                                <li>Endometriose</li>
+                                <li>Infertilidade</li>
+                            </ul>
+                            
+                            <div class="servico-info">
+                                <div class="info-card">
+                                    <i class="fas fa-user-md"></i>
+                                    <h5>Médicos</h5>
+                                    <p>Dra. Mariana Oliveira<br>Dra. Juliana Martins</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-clock"></i>
+                                    <h5>Horários</h5>
+                                    <p>Seg-Qua: 9h-18h<br>Qui-Sex: 14h-18h</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h5>Agendamento</h5>
+                                    <p>Consultas com até 24h de antecedência</p>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="exames">
+                    <div class="servico-detalhe">
+                        <div class="servico-imagem">
+                            <img src="img/exames.jpg" alt="Exames">
+                        </div>
+                        <div class="servico-texto">
+                            <h3>Exames e Diagnósticos</h3>
+                            <p>Nossa clínica oferece uma ampla gama de exames laboratoriais e de imagem para diagnóstico preciso e acompanhamento de tratamentos, realizados com equipamentos modernos e tecnologia de ponta.</p>
+                            <p>Todos os exames são realizados por profissionais especializados e os laudos são elaborados por médicos experientes em cada área.</p>
+                            
+                            <h4>Principais Exames:</h4>
+                            <div class="exames-grid">
+                                <div class="exame-col">
+                                    <h5>Laboratoriais</h5>
+                                    <ul>
+                                        <li>Hemograma completo</li>
+                                        <li>Glicemia</li>
+                                        <li>Colesterol e triglicerídeos</li>
+                                        <li>Função renal e hepática</li>
+                                        <li>Hormônios</li>
+                                        <li>Exames de urina e fezes</li>
+                                    </ul>
+                                </div>
+                                <div class="exame-col">
+                                    <h5>Imagem</h5>
+                                    <ul>
+                                        <li>Ultrassonografia</li>
+                                        <li>Raio-X</li>
+                                        <li>Mamografia</li>
+                                        <li>Densitometria óssea</li>
+                                        <li>Ecocardiograma</li>
+                                        <li>Doppler vascular</li>
+                                    </ul>
+                                </div>
+                                <div class="exame-col">
+                                    <h5>Funcionais</h5>
+                                    <ul>
+                                        <li>Teste ergométrico</li>
+                                        <li>Holter 24h</li>
+                                        <li>MAP A 24h</li>
+                                        <li>Espirometria</li>
+                                        <li>EEG</li>
+                                        <li>Eletroneuromiografia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="servico-info">
+                                <div class="info-card">
+                                    <i class="fas fa-clock"></i>
+                                    <h5>Horários</h5>
+                                    <p>Seg-Sex: 7h-19h<br>Sáb: 7h-12h</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h5>Agendamento</h5>
+                                    <p>Exames com até 24h de antecedência</p>
+                                </div>
+                                <div class="info-card">
+                                    <i class="fas fa-file-alt"></i>
+                                    <h5>Preparação</h5>
+                                    <p>Alguns exames requerem preparo específico</p>
+                                </div>
+                            </div>
+                            
+                            <a href="contato.html" class="btn btn-primary">Agendar Exame</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Convênios -->
+    <section class="convenios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Convênios Aceitos</h2>
+                <p class="section-subtitle">Atendemos os principais planos de saúde do mercado</p>
+            </div>
+            
+            <div class="convenios-grid">
+                <div class="convenio-card">
+                    <img src="img/convenio1.png" alt="Amil">
+                </div>
+                <div class="convenio-card">
+                    <img src="img/convenio2.png" alt="SulAmérica">
+                </div>
+                <div class="convenio-card">
+                    <img src="img/convenio3.png" alt="Bradesco Saúde">
+                </div>
+                <div class="convenio-card">
+                    <img src="img/convenio4.png" alt="Unimed">
+                </div>
+                <div class="convenio-card">
+                    <img src="img/convenio5.png" alt="Porto Seguro">
+                </div>
+                <div class="convenio-card">
+                    <img src="img/convenio6.png" alt="NotreDame Intermédica">
+                </div>
+            </div>
+            
+            <div class="convenios-info">
+                <p>Para pacientes particulares, oferecemos condições especiais e parcelamento em até 12x no cartão.</p>
+                <a href="contato.html" class="btn btn-outline">Consultar Valores</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo-vitacare-white.svg" alt="VitaCare" width="160">
+                    <p>Excelência em cuidados médicos com foco no paciente e resultados de qualidade.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="servicos.html#cardiologia">Cardiologia</a></li>
+                        <li><a href="servicos.html#ortopedia">Ortopedia</a></li>
+                        <li><a href="servicos.html#pediatria">Pediatria</a></li>
+                        <li><a href="servicos.html#ginecologia">Ginecologia</a></li>
+                        <li><a href="servicos.html#clinico">Clínico Geral</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="footer-contato">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Medicina, 123 - Centro, São Paulo/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@vitacare.com.br</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h | Sáb: 8h às 12h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VitaCare Clínica Médica. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
