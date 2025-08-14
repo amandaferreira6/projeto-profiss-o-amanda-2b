@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - VitaCare Clínica Médica</title>
+    <meta name="description" content="Conheça a história, missão e valores da VitaCare Clínica Médica">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-vitacare.svg" alt="VitaCare Clínica Médica" width="180">
+            </a>
+            
+            <nav class="nav">
+                <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Página -->
+    <section class="page-banner" style="background-image: url('img/banner-sobre.jpg');">
+        <div class="container">
+            <h1>Sobre a VitaCare</h1>
+            <p>Conheça nossa história, missão e valores</p>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section class="nossa-historia">
+        <div class="container">
+            <div class="historia-content">
+                <div class="historia-texto">
+                    <h2 class="section-title">Nossa História</h2>
+                    <p>Fundada em 2010, a VitaCare nasceu da visão de um grupo de médicos que desejava oferecer um atendimento médico diferenciado, combinando excelência técnica com humanização no cuidado ao paciente.</p>
+                    <p>Começamos como uma pequena clínica no centro de São Paulo e, ao longo dos anos, crescemos graças à confiança de nossos pacientes e ao compromisso com a qualidade em saúde. Hoje, somos referência em medicina integrada, com mais de 20 especialidades e uma equipe de mais de 50 profissionais altamente qualificados.</p>
+                    <p>Nossa trajetória é marcada por inovações tecnológicas, investimento contínuo em capacitação da equipe e, principalmente, pela satisfação de milhares de pacientes que confiaram em nossos serviços.</p>
+                </div>
+                <div class="historia-imagem">
+                    <img src="img/clinica-antiga.jpg" alt="Nossa clínica em 2010" class="historia-img">
+                    <div class="historia-legenda">Nossa primeira unidade em 2010</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missão, Visão e Valores -->
+    <section class="missao-valores">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Pilares</h2>
+                <p class="section-subtitle">O que nos guia em nossa jornada de cuidados com a saúde</p>
+            </div>
+            
+            <div class="pilares-grid">
+                <div class="pilar-card">
+                    <div class="pilar-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Missão</h3>
+                    <p>Proporcionar saúde e qualidade de vida através de atendimento médico excelente, humanizado e personalizado, com foco na prevenção e no tratamento eficaz de doenças.</p>
+                </div>
+                
+                <div class="pilar-card">
+                    <div class="pilar-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida como a melhor clínica médica integrada do país, referência em qualidade assistencial, tecnologia e satisfação dos pacientes até 2030.</p>
+                </div>
+                
+                <div class="pilar-card">
+                    <div class="pilar-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Ética e transparência</li>
+                        <li>Humanização no atendimento</li>
+                        <li>Excelência técnica</li>
+                        <li>Inovação constante</li>
+                        <li>Responsabilidade social</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Equipe -->
+    <section class="nossa-equipe">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conheça Nossa Equipe</h2>
+                <p class="section-subtitle">Profissionais altamente qualificados e comprometidos com sua saúde</p>
+            </div>
+            
+            <div class="equipe-carrossel">
+                <div class="equipe-slide">
+                    <img src="img/medico1.jpg" alt="Dr. Carlos Mendes">
+                    <div class="equipe-info">
+                        <h3>Dr. Carlos Mendes</h3>
+                        <span>Cardiologista</span>
+                        <p>CRM-SP 123456</p>
+                        <div class="equipe-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipe-slide">
+                    <img src="img/medica2.jpg" alt="Dra. Ana Lúcia Silva">
+                    <div class="equipe-info">
+                        <h3>Dra. Ana Lúcia Silva</h3>
+                        <span>Pediatra</span>
+                        <p>CRM-SP 654321</p>
+                        <div class="equipe-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipe-slide">
+                    <img src="img/medico3.jpg" alt="Dr. Roberto Fernandes">
+                    <div class="equipe-info">
+                        <h3>Dr. Roberto Fernandes</h3>
+                        <span>Ortopedista</span>
+                        <p>CRM-SP 789012</p>
+                        <div class="equipe-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipe-slide">
+                    <img src="img/medica4.jpg" alt="Dra. Mariana Oliveira">
+                    <div class="equipe-info">
+                        <h3>Dra. Mariana Oliveira</h3>
+                        <span>Ginecologista</span>
+                        <p>CRM-SP 210987</p>
+                        <div class="equipe-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="equipe-cta">
+                <a href="servicos.html" class="btn btn-primary">Conheça Todos os Especialistas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infraestrutura -->
+    <section class="infraestrutura">
+        <div class="container">
+            <div class="infraestrutura-content">
+                <div class="infraestrutura-imagens">
+                    <div class="infra-img-main">
+                        <img src="img/clinica-atual.jpg" alt="Nossa clínica hoje">
+                    </div>
+                    <div class="infra-img-grid">
+                        <img src="img/sala-consulta.jpg" alt="Sala de consulta">
+                        <img src="img/equipamentos.jpg" alt="Nossos equipamentos">
+                        <img src="img/recepcao.jpg" alt="Recepção">
+                        <img src="img/espera.jpg" alt="Sala de espera">
+                    </div>
+                </div>
+                
+                <div class="infraestrutura-texto">
+                    <h2 class="section-title">Nossa Infraestrutura</h2>
+                    <p>A VitaCare conta com instalações modernas e equipamentos de última geração para oferecer o melhor atendimento aos nossos pacientes:</p>
+                    
+                    <ul class="infra-lista">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Consultórios amplos e climatizados</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Centro de diagnósticos completo</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sala de vacinação</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ambulatório para pequenos procedimentos</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Acessibilidade completa</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Wi-Fi gratuito e ambiente acolhedor</span>
+                        </li>
+                    </ul>
+                    
+                    <p>Investimos constantemente em tecnologia e conforto para que sua experiência na VitaCare seja a melhor possível.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificações -->
+    <section class="certificacoes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificações e Reconhecimentos</h2>
+                <p class="section-subtitle">Compromisso com a qualidade e segurança do paciente</p>
+            </div>
+            
+            <div class="certificacoes-grid">
+                <div class="certificado-card">
+                    <img src="img/certificado1.png" alt="Certificação ONA">
+                    <p>Certificação ONA - Nível 2</p>
+                </div>
+                
+                <div class="certificado-card">
+                    <img src="img/certificado2.png" alt="Acreditação Internacional">
+                    <p>Acreditação Internacional JCI</p>
+                </div>
+                
+                <div class="certificado-card">
+                    <img src="img/certificado3.png" alt="Prêmio Qualidade em Saúde">
+                    <p>Prêmio Qualidade em Saúde 2022</p>
+                </div>
+                
+                <div class="certificado-card">
+                    <img src="img/certificado4.png" alt="Hospital Seguro">
+                    <p>Certificado Hospital Seguro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo-vitacare-white.svg" alt="VitaCare" width="160">
+                    <p>Excelência em cuidados médicos com foco no paciente e resultados de qualidade.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="servicos.html#cardiologia">Cardiologia</a></li>
+                        <li><a href="servicos.html#ortopedia">Ortopedia</a></li>
+                        <li><a href="servicos.html#pediatria">Pediatria</a></li>
+                        <li><a href="servicos.html#ginecologia">Ginecologia</a></li>
+                        <li><a href="servicos.html#clinico">Clínico Geral</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="footer-contato">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Medicina, 123 - Centro, São Paulo/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@vitacare.com.br</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h | Sáb: 8h às 12h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VitaCare Clínica Médica. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
